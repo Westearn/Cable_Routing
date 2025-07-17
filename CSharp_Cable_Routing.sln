@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_Cable_Routing", "CSharp_Cable_Routing\CSharp_Cable_Routing.csproj", "{72A5D6DB-4AA0-4676-8910-43208D8D06AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug NCAD|Any CPU = Debug NCAD|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72A5D6DB-4AA0-4676-8910-43208D8D06AE}.Debug NCAD|Any CPU.ActiveCfg = Debug NCAD|Any CPU
+		{72A5D6DB-4AA0-4676-8910-43208D8D06AE}.Debug NCAD|Any CPU.Build.0 = Debug NCAD|Any CPU
+		{72A5D6DB-4AA0-4676-8910-43208D8D06AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A5D6DB-4AA0-4676-8910-43208D8D06AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A5D6DB-4AA0-4676-8910-43208D8D06AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A5D6DB-4AA0-4676-8910-43208D8D06AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {061007EE-E48B-4ADD-B628-7E33308904B8}
+	EndGlobalSection
+EndGlobal

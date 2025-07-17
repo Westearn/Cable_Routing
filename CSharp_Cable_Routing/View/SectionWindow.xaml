@@ -1,0 +1,29 @@
+﻿<Window x:Class="CSharp_Cable_Routing.View.SectionWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CSharp_Cable_Routing.View"
+             ResizeMode="NoResize" FontFamily="Arial" FontSize="14" Height="182" Width="366" Title="Сечения" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock x:Name="Name" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Width="340" TextAlignment="Center" Text="Добавить обозначения сечений к соответствующим участкам в простарнстве модели?" Language="ru-ru"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Image Source="pack://application:,,,/CSharp_Cable_Routing;component/Resources/SectionImage.png" Stretch="Uniform"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="save_button" Content="Добавить" HorizontalAlignment="Center" Grid.Column="0" VerticalAlignment="Center" Height="22" Width="156" Click="save_button_Click"/>
+            <Button x:Name="cancel_button" Content="Отмена" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Height="22" Width="157" Click="close_button_click"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,106 @@
+﻿<Window x:Class="CSharp_Cable_Routing.View.SettingsWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CSharp_Cable_Routing.View"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             ResizeMode="NoResize" FontFamily="Arial" FontSize="14" Height="240" Width="391" Title="Параметры сечений" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="sech_block" HorizontalAlignment="Center" Grid.Column="0" VerticalAlignment="Center" TextWrapping="Wrap" Text="Тип сечения" TextAlignment="Center"/>
+            <ComboBox x:Name="sech_combobox" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center" SelectionChanged="sech_combobox_SelectionChanged" Width="180">
+                <System:String>СТМ</System:String>
+                <System:String>ДКС</System:String>
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="shir_block" HorizontalAlignment="Center" Grid.Column="0" VerticalAlignment="Center" TextWrapping="Wrap" Text="Ширина лотков, мм" Width="180" TextAlignment="Center"/>
+            <ComboBox x:Name="shir_combobox" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Width="180">
+                <System:Int32>400</System:Int32>
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="k_block" HorizontalAlignment="Center" Grid.Column="0" VerticalAlignment="Center" TextWrapping="Wrap" Text="Коэф. свободного места, %" Width="180" TextAlignment="Center"/>
+            <ComboBox x:Name="k_combobox" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Width="180">
+                <System:Int32>0</System:Int32>
+                <System:Int32>10</System:Int32>
+                <System:Int32>20</System:Int32>
+                <System:Int32>30</System:Int32>
+                <System:Int32>40</System:Int32>
+                <System:Int32>50</System:Int32>
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="c_block" HorizontalAlignment="Center" Grid.Column="0" VerticalAlignment="Center" TextWrapping="Wrap" Text="Тип раскладки" Width="180" TextAlignment="Center"/>
+            <ComboBox x:Name="c_combobox" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Width="180">
+                <System:String>Вплотную</System:String>
+                <System:String>0.3 диаметра</System:String>
+                <System:String>1 диаметр</System:String>
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="oatp_block" HorizontalAlignment="Center" Grid.Column="0" VerticalAlignment="Center" TextWrapping="Wrap" Text="Ярусы ОАТП, %" Width="180" TextAlignment="Center"/>
+            <ComboBox x:Name="oatp_combobox" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Width="180">
+                <System:Int32>0</System:Int32>
+                <System:Int32>10</System:Int32>
+                <System:Int32>20</System:Int32>
+                <System:Int32>30</System:Int32>
+                <System:Int32>40</System:Int32>
+                <System:Int32>50</System:Int32>
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="seo_block" HorizontalAlignment="Center" Grid.Column="0" VerticalAlignment="Center" TextWrapping="Wrap" Text="Ярусы СЭО, %" Width="180" TextAlignment="Center"/>
+            <ComboBox x:Name="seo_combobox" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Width="180">
+                <System:Int32>0</System:Int32>
+                <System:Int32>10</System:Int32>
+                <System:Int32>20</System:Int32>
+                <System:Int32>30</System:Int32>
+                <System:Int32>40</System:Int32>
+                <System:Int32>50</System:Int32>
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Row="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="save_button" Content="Сохранить и закрыть" HorizontalAlignment="Center" Grid.Column="0" VerticalAlignment="Center" Height="22" Width="160" Click="save_button_Click"/>
+            <Button x:Name="cancel_button" Content="Отмена" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Height="22" Width="160" Click="close_button_click"/>
+        </Grid>
+    </Grid>
+</Window>
